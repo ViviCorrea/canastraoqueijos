@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style.css">
   
 </head>
 <body>
@@ -60,9 +60,9 @@
        </nav>
 
        
-        <section div="colPriCompras"> 
+        <section class="colPriCompras">
             <fieldset class="divCompras"> 
-            <td align="left">  Compras </td>
+            <p align="left">  Compras </p>
        
                     <fieldset class="fsEsq" > 
                 <legend> Identificação</legend> 
@@ -87,13 +87,14 @@
 
                 <div class="divLinha">
                     <label class="colPri"> Endereço: </label>
-                <textarea name= "endereço" rols="4" class="impGrande"> </textarea> 
+                <textarea name= "endereço" rows="4" class="impGrande"> </textarea>
                </div>
            
               <div class="divLinha"> 
               <label class="colPri" for="telefone"> Telefone: </label> 
              <input type="text" class="impTelef" name="telefone" /> 
             </div>
+                    </fieldset>
 
             <fieldset class="fsDir"> 
                 <legend> Nascimento: </legend>
@@ -117,7 +118,7 @@
 
                     <div class="divLinha"> 
                     <select name="acesskey"> 
-                        <option value= input type=password atributos> ******
+                        <option> ******
                             <optgroup label="Nacional" class="colSelProd">
                                 <option> Canastra (500g)</option>
                                 <option> Queijo Minas (400g)</option>
@@ -134,7 +135,7 @@
                 <textarea class="elemDir" name="ListaPedidos"
                 readonly cols="23" rows="8"> </textarea> 
                 
-                <fieldset class="fsEsq" class ="colLabCrd" >
+                <fieldset class="fsEsq colLabCrd" >
                     <legend> Cartão </legend>
                      Bandeira:
                     <label> <input type="radio" name="cartão" value="Visa" checked> Visa </label>
@@ -144,8 +145,8 @@
                     <br> <br> 
                     <div>
                         <label class="fsEsq" for="validade"> Validade: </label>
-                    <input type="number" name="validademes"id="diaVal" min="1" max="12" class="numDD" value="5"/> /
-                    <input type="number2" name="validadeano" min="2015" max="2025" class="numDD" value="2025"  /> </div>
+                    <input type="number" name="validademes" id="diaVal" min="1" max="12" class="numDD" value="5"/> /
+                    <input type="number" name="validadeano" min="2015" max="2025" class="numDD" value="2025"  /> </div>
                     <br><br>
                     <label class="ColPri"> Número: </label>
                     <input type="text" name="número" required/>
@@ -160,11 +161,6 @@
                 <input type="button" name="botão" value="Enviar">
                 <input type="button" name="botão" value="Limpar">
                </div>
-
-            </class>       
-           
-            
-
         </section>   
 </body>
 </html> 
